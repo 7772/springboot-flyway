@@ -27,15 +27,15 @@ test {
 }
 
 flyway {
-	url = 'jdbc:mysql://localhost:3306/db_example'
-	user = 'sa'
-	password = 'Password#1'
-	locations = ['classpath:db/migration']
-}
-
-flyway {
 	url = 'jdbc:mysql://localhost:3306/db_example_test'
 	user = 'test'
 	password = 'Password#1'
 	locations = ['filesystem:src/test/resources/db/migration']
+}
+
+flyway {
+	url = 'jdbc:mysql://localhost:3306/db_example'
+	user = 'sa'
+	password = 'Password#1'
+	locations = ['classpath:db/migration']
 }
